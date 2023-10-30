@@ -11,8 +11,10 @@ function Jogar() {
     tentativas += 1;
     if (input < numero && tentativas < 5) {
         alert("Tente um número maior...");
+        break;
     } else if (input > numero && tentativas < 5) {
         alert("Tente um número menor...");
+        break;
     } else if (tentativas === 5) {
         resultado.textContent = "Você está morto!!! O Guardião dos portais infernais te matou com seus poderes mágicos e as Succubus e os Cães do Inferno comeram sua carne vivo. GAME OVER!!! O seu número da morte é: " + numero;
     } else {
