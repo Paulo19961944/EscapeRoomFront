@@ -14,7 +14,7 @@ function Jogar() {
     } else if (input > numero && tentativas < 5) {
         alert("Tente um número menor...");
     } else if (tentativas === 5) {
-        resultado.textContent = "Você está morto!!! O Guardião dos portais infernais te matou com seus poderes mágicos e as Succubus e os Cães do Inferno comeram sua carne vivo. GAME OVER!!! O seu número da morte é: " + numero;
+        alert("Você está morto!!! O Guardião dos portais infernais te matou com seus poderes mágicos e as Succubus e os Cães do Inferno comeram sua carne vivo. GAME OVER!!! O seu número da morte é: " + numero)
         // Exibir uma caixa de diálogo perguntando se deseja continuar
         const continuar = confirm("Deseja continuar?");
         if (continuar) {
@@ -23,7 +23,7 @@ function Jogar() {
             window.close(); // Fecha a janela
         }
     } else {
-        resultado.textContent = "Parabéns. O seu inimigo está morto e você conseguiu vencer o Guardião dos Portais Infernais. O seu número da sorte é: " + numero;
+        alert("Parabéns. O seu inimigo está morto e você conseguiu vencer o Guardião dos Portais Infernais. O seu número da sorte é: " + numero);
         // Exibir uma caixa de diálogo perguntando se deseja continuar
         const continuar = confirm("Deseja continuar?");
         if (continuar) {
