@@ -7,9 +7,9 @@ let tentativas = 0;
 function Jogar() {
     let input = parseInt(document.querySelector("#number").value); // Obtenha o valor do input dentro da função
     tentativas += 1;
-    if (input < numero && tentativas < 5) {
+    if (input < numero && tentativas <= 5) {
         alert("Tente um número maior...");
-    } else if (input > numero && tentativas < 5) {
+    } else if (input > numero && tentativas <= 5) {
         alert("Tente um número menor...");
     } else if (tentativas === 5) {
         // Exibir a mensagem final após o término do jogo
