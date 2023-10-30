@@ -1,5 +1,9 @@
 let button = document.querySelector("#btn");
-button.addEventListener("click", Jogar);
+let audio = new Audio("audio/Satans Lament.mp3");
+button.addEventListener("click", function (){
+    audio.play();
+    Jogar();
+});
 let resultado = document.querySelector("#resultado");
 let numero = Math.floor(Math.random() * 100) + 1; // Gere um número aleatório entre 1 e 100
 let tentativas = 0;
