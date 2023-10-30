@@ -7,7 +7,7 @@ let tentativas = 0;
 function Jogar() {
     let input = parseInt(document.querySelector("#number").value); // Obtenha o valor do input dentro da função
     tentativas += 1;
-
+    do{
     if (input < numero && tentativas < 5) {
         alert("Tente um número maior...");
     } else if (input > numero && tentativas < 5) {
@@ -17,4 +17,7 @@ function Jogar() {
     } else {
         resultado.textContent = "Parabéns. O seu inimigo está morto e você conseguiu vencer o Guardião dos Portais Infernais. O seu número da sorte é: " + numero;
     }
+    
+}while(tentativas < 5 && input != numero);
+
 }
