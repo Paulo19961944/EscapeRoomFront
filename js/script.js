@@ -19,12 +19,5 @@ function Jogar() {
     } else {
         // Exibir a mensagem final após o término do jogo
         alert("Parabéns. O seu inimigo está morto e você conseguiu vencer o Guardião dos Portais Infernais. O seu número da sorte é: " + numero);
+    }        
     }
-            // Exibir uma caixa de diálogo perguntando se deseja continuar
-            const continuar = confirm("Deseja continuar?");
-            if (continuar) {
-                location.reload(); // Recarrega a página
-            } else {
-                window.close(); // Fecha a janela
-            }
-}
