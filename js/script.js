@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
         tentativas += 1;
 
         if (userNum == sortedNum) {
-            window.location.href = "http://127.0.0.1:5500/resultado.html";
+            window.location.href = "https://www.paulo19961944.github.io/resultado.html";
         } else if (tentativas === 5) {
-            window.location.href = "http://127.0.0.1:5500/perdeu.html";
+            window.location.href = "https://www.paulo19961944.github.io/perdeu.html";
         } else if (userNum < sortedNum) {
             alert("Tente um número maior...");
         } else {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function Continuar() {
-        window.location.href = "http://127.0.0.1:5500/jogar.html";
+        window.location.href = "https://www.paulo19961944.github.io/jogar.html";
     }
 
     function Encerrar() {

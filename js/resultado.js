@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function Continuar() {
-    window.location.href = "http://127.0.0.1:5500/jogar.html";
+    window.location.href = "https://www.paulo19961944.github.io/jogar.html";
 }
