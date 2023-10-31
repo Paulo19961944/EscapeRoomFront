@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
         tentativas += 1;
 
         if (userNum == sortedNum) {
-            window.location.href = "https://www.paulo19961944.github.io/resultado.html";
+            window.location.href = "resultado.html";
         } else if (tentativas === 5) {
-            window.location.href = "https://www.paulo19961944.github.io/perdeu.html";
+            window.location.href = "perdeu.html";
         } else if (userNum < sortedNum) {
             alert("Tente um número maior...");
         } else {
